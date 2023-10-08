@@ -12,4 +12,4 @@ COPY src/ src
 RUN npm run build
 
 FROM caddy:latest
-COPY --from=build /build/build/ /var/www/html
+COPY --from=build /build/build/ /srv
